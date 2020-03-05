@@ -17,7 +17,7 @@ class HotelDetails
         cy.get('#returnTimeFilterSkeleton > .time-footer > .time-min').should('be.visible', '00:00')
         cy.get('#returnTimeFilterSkeleton > .time-footer > .time-max').should('be.visible', '12:00')
 
-        cy.wait(10000)
+        cy.wait(12000)
         return this
     }
 

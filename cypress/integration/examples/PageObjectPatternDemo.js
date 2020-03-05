@@ -18,7 +18,7 @@ describe('Test Suite Name', function () {
 
     })
 
-    it('TestCase-01', function () {
+    it('TestCase-01: Enter city, Departure/Arrival Date and AdultCount', function () {
 
         const search = new SearchPage()
         const HotelSelect = new HotelSelection()
@@ -35,27 +35,27 @@ describe('Test Suite Name', function () {
 
     })
 
-    it('Testcase-02', function () {
+    it('Testcase-02: Select 4 star and best review rating hotel', function () {
         const HotelSelect = new HotelSelection()
         HotelSelect.filterStar(4)
         HotelSelect.filterBestRating(5)
         HotelSelect.verifyAppliedFilters()
     })
 
-    it('Testcase-03', function () {
+    it('Testcase-03: Sort the result by price descending', function () {
         const HotelSelect = new HotelSelection()
         HotelSelect.sortPriceDescenadingOrder()
         HotelSelect.verifyAmtSortedDescendingOrder()
     })
 
-    it('Testcase-04', function () {
+    it('Testcase-04: Select the expensive hotel', function () {
         const HotelSelect = new HotelSelection()
         HotelSelect.selectExpensiveHotel()
         HotelSelect.verifyExpensiveHotelSelected()
         cy.contains('Castello Di San Marco Charming Hotel & Spa').should('be.visible')  
     })
 
-    it('Testcase-05', function () {
+    it('Testcase-05: Provide departure and arrival time range', function () {
 
         const HotelDetail = new HotelDetails()
         HotelDetail.SelectDepartAndArrivalSliderTimeRange()
@@ -63,7 +63,7 @@ describe('Test Suite Name', function () {
     })
 
 
-    it('Testcase-06', function () {
+    it('Testcase-06: Chnage arrival date ', function () {
 
         const HotelDetail = new HotelDetails()
         HotelDetail.SelecttArrivalDate("07/13/2020")
@@ -73,7 +73,7 @@ describe('Test Suite Name', function () {
     })
 
 
-    it('Testcase-07', function () {
+    it('Testcase-07: Go to best offer and count number of direct flights in first page', function () {
 
         const HotelDetail = new HotelDetails()
         HotelDetail.SelectOffer()
@@ -81,7 +81,7 @@ describe('Test Suite Name', function () {
 
     })
 
-    it('Testcase-08', function () {
+    it('Testcase-08: Verify that the flight time of the first result falls within the desired timerange', function () {
 
         const HotelDetail = new HotelDetails()
         HotelDetail.VerifyFlightTimeFallsWithinDepartureArrivalTimeRange()
@@ -89,7 +89,7 @@ describe('Test Suite Name', function () {
 
     })
 
-    it('Testcase-09', function () {
+    it('Testcase-09: Select the first offer and go to booking', function () {
 
         const HotelDetail = new HotelDetails()
         HotelDetail.goToBookingForFirstFlight()
@@ -97,7 +97,7 @@ describe('Test Suite Name', function () {
 
     })
 
-    it('Testcase-10', function () {
+    it('Testcase-10:Verify most expensive hotel displayed in booking page', function () {
         const BookPage = new BookingPage() 
         BookPage.VerifyHotelName()  
 
