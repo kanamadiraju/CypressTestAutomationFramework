@@ -17,15 +17,15 @@ class HotelDetails
         cy.get('#returnTimeFilterSkeleton > .time-footer > .time-min').should('be.visible', '00:00')
         cy.get('#returnTimeFilterSkeleton > .time-footer > .time-max').should('be.visible', '12:00')
 
-        cy.wait(12000)
+        cy.wait(15000)
         return this
     }
 
     SelectOffer()
     {
-       const offer = cy.get('#best-offers > .special-organizer > .content > .price > .price-check > .button-next')
-       offer.should('be.visible')
-       offer.click()
+       cy.get('.duration-airport').eq(0).click()
+       cy.contains('Bester Preis').should('be.visible')
+   
     }
     
     GetNumberOfDirectFlights()
