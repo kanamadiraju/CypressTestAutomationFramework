@@ -1,0 +1,12 @@
+cypress/videos/PageObjects/BookingPage.js.mp4
+cypress/videos/PageObjects/HotelDetails.js.mp4
+cypress/videos/PageObjects/HotelSelection.js.mp4
+cypress/videos/PageObjects/SearchPage.js.mp4
+cypress/videos/examples/PageObjectPatternDemo.js.mp4
+cypress/videos/examples/Launch_spec.js.mp4
+cypress/screenshots/examples/PageObjectPatternDemo.js/Test Suite Name -- Testcase-10 (failed).png
+cypress/screenshots/examples/PageObjectPatternDemo.js/Test Suite Name -- Testcase-09 (failed).png
+cypress/screenshots/examples/PageObjectPatternDemo.js/Test Suite Name -- Testcase-08 (failed).png
+cypress/screenshots/examples/Launch_spec.js/MyTestSuite -- VerifyTimeRangeDepartureArrival (failed).png
+cypress/screenshots/examples/Launch_spec.js/MyTestSuite -- Testcase-10 (failed).png
+cypress/screenshots/examples/Launch_spec.js/MyTestSuite -- Advertise link should refer to Contact page (failed).png
