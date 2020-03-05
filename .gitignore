@@ -10,3 +10,6 @@ cypress/screenshots/examples/PageObjectPatternDemo.js/Test Suite Name -- Testcas
 cypress/screenshots/examples/Launch_spec.js/MyTestSuite -- VerifyTimeRangeDepartureArrival (failed).png
 cypress/screenshots/examples/Launch_spec.js/MyTestSuite -- Testcase-10 (failed).png
 cypress/screenshots/examples/Launch_spec.js/MyTestSuite -- Advertise link should refer to Contact page (failed).png
+cypress/integration/examples/PageObjectPatternDemo.js
+cypress/screenshots/examples/PageObjectPatternDemo.js/Test Suite Name -- Testcase-10Verify most expensive hotel displayed in booking page (failed).png
+cypress/screenshots/examples/PageObjectPatternDemo.js/Test Suite Name -- Testcase-08 Verify that the flight time of the first result falls within the desired timerange (failed).png

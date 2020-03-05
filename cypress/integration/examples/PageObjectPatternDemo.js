@@ -97,7 +97,7 @@ describe('Test Suite Name', function () {
 
     })
 
-    it('Testcase-10:Verify most expensive hotel displayed in booking page', function () {
+    it('Testcase-10: Verify most expensive hotel displayed in booking page', function () {
         const BookPage = new BookingPage() 
         BookPage.VerifyHotelName()  
 
