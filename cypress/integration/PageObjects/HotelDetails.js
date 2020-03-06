@@ -167,6 +167,7 @@ class HotelDetails
     }
     goToBookingForFirstFlight()
     {
+        
         cy.get('#skeletonOffers > section.skeleton-offers > article:nth-child(1) > div > div.price.js-priceBlock > a')
             .invoke('attr', 'href')
             .then(href => {
