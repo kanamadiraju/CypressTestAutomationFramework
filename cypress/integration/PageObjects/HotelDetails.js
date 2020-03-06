@@ -23,8 +23,11 @@ class HotelDetails
 
     SelectOffer()
     {
-       cy.get('.duration-airport').eq(0).click()
-       cy.contains('Bester Preis').should('be.visible')
+       
+        cy.contains('Bester Preis').should('be.visible')
+        const bestOffers = cy.get('.duration-airport').eq(0)
+        bestOffers.click()
+       
    
     }
     
