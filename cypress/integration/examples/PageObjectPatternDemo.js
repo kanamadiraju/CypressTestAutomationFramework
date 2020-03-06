@@ -7,7 +7,7 @@ import BookingPage from "../PageObjects/BookingPage"
 
 
 
-describe('Test Suite Name', function () {
+describe('Invia Test Automation Suite', function () {
     before(function () {
         // cy.log("***************This is SETUP block********************")
         cy.fixture('profile').then(function (data) {
