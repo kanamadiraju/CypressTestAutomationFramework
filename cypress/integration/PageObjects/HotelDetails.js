@@ -118,7 +118,7 @@ class HotelDetails
             }
             else {
                 cy.log('Flight departue time ' + checkTime1 + '-' + checkTime2 + ' not falls between ' + startTime + ' and ' + endTime)
-                cy.contains("Sorry, something went wrong").should('exist')
+                cy.contains('Flight departue time ' + checkTime1 + '-' + checkTime2 + ' not falls between ' + startTime + ' and ' + endTime).should('exist')
 
             }
         })
@@ -158,7 +158,7 @@ class HotelDetails
             }
             else {
                 cy.log('Flight arrival time ' + checkTime1 + '-' + checkTime2 + ' not falls between ' + startTime + ' and ' + endTime)
-                cy.contains("Sorry, something went wrong").should('exist')
+                cy.contains('Flight arrival time ' + checkTime1 + '-' + checkTime2 + ' not falls between ' + startTime + ' and ' + endTime).should('exist')
 
             }
         })
@@ -167,7 +167,7 @@ class HotelDetails
     }
     goToBookingForFirstFlight()
     {
-        cy.get('#best-offers > article.success.top-offer.special-organizer.current > div > div.price.js-priceBlock > a')
+        cy.get('#skeletonOffers > section.skeleton-offers > article:nth-child(1) > div > div.price.js-priceBlock > a')
             .invoke('attr', 'href')
             .then(href => {
                 cy.visit(href)
