@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules\\.bin\\cypress run --record --key aa2fd59c-5bbb-414c-9d18-37e47c524b2d",
+    "test": "node_modules\\.bin\\cypress run --browser chrome --record --key aa2fd59c-5bbb-414c-9d18-37e47c524b2d",
     "runtests": "npm run test --"
   },
   "author": "Ningappa",
