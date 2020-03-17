@@ -78,7 +78,7 @@ describe('Invia Test Automation Suite', function () {
     it('Testcase-07: Go to best offer and count number of direct flights in first page', function () {
 
         const HotelDetail = new HotelDetails()
-        HotelDetail.SelectOffer()
+       // HotelDetail.SelectOffer()
         HotelDetail.GetNumberOfDirectFlights()
 
     })
