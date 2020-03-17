@@ -32,6 +32,7 @@ describe('Invia Test Automation Suite', function () {
         cy.url().should('include', 'depDate/06.06.2020/retDate/13.06.2020')
         HotelSelect.enterDateFromSecondPage(this.data.changeStartDate, this.data.changeEndDate)
         HotelSelect.submitSeachButton()
+        cy.url().should('include', 'depDate/13.06.2020/retDate/20.06.2020')
 
     })
 
@@ -51,6 +52,7 @@ describe('Invia Test Automation Suite', function () {
     it('Testcase-04: Select the expensive hotel', function () {
         const HotelSelect = new HotelSelection()
         HotelSelect.selectExpensiveHotel()
+        
         HotelSelect.verifyExpensiveHotelSelected()
         cy.contains('Castello Di San Marco Charming Hotel & Spa').should('be.visible')  
     })

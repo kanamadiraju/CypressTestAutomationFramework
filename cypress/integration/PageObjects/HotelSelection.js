@@ -66,8 +66,9 @@ class HotelSelection
  {
     cy.get('div >.price').should('have.length.gt', 0).then($prices =>{
         const prices = $prices.toArray()
-        cy.log(prices)
         expect(prices).to.be.sorted({descending: true})
+        cy.log("prices are sorted in descending order")
+        
      })
      return this
  }
